@@ -24,14 +24,14 @@ export default function Create() {
     <div>
        <Form>
     <Form.Field>
-      <label style={{"alignItems":"center"}}>Task Name</label>
-      <input placeholder='Task Name' value={taskName}  onChange={(e)=>settaskName(e.target.value)}/>
+      <label style={{"alignItems":"center" , "color":"white","fontSize":"1.2rem"}}>Task Name</label>
+      <input  placeholder='Task Name' value={taskName} style={{"width":"30rem"}}  onChange={(e)=>settaskName(e.target.value)}/>
     </Form.Field>
     <Form.Field>
-      <label>Due Time</label>
-      <input placeholder='Due Time' value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
+      <label style={{"alignItems":"center" , "color":"white","fontSize":"1.2rem"}}>Due Time</label>
+      <input placeholder='Due Time' style={{"width":"30rem"}} value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
     </Form.Field>
-    <Button type='submit' onClick={UpdateHandler} >Update</Button>
+    <Button type='submit' onClick={UpdateHandler} style={{"color":"green","width":"30rem"}} >Update</Button>
   </Form>
     </div>
   )

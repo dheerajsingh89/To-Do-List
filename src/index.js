@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'semantic-ui-css/semantic.min.css'
-
+document.body.style.backgroundColor="black"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode>    
     <App />
   </React.StrictMode>
 );

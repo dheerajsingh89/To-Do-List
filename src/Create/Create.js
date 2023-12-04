@@ -15,18 +15,18 @@ export default function Create() {
         setduetime('')
     }
   return (
-    <div className='form_create'>
+    <div className='form_create' style={{}}>
        <Form>
     <Form.Field>
-      <label style={{"alignItems":"center"}}>Task Name</label>
-      <input placeholder='Task Name' value={taskName}  onChange={(e)=>settaskName(e.target.value)}/>
+      <label style={{"alignItems":"center","color":"white","fontSize":"1.2rem"}}>Task Name</label>
+      <input placeholder='Task Name' value={taskName}  onChange={(e)=>settaskName(e.target.value)} style={{"width":"30rem"}}/>
     </Form.Field>
     <Form.Field>
-      <label>Due Time</label>
-      <input placeholder='Due Time' value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
+      <label style={{"alignItems":"center","color":"white","fontSize":"1.2rem"}}>Due Time</label>
+      <input style={{"width":"30rem"}} placeholder='Due Time' value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
     </Form.Field>
-    <Button type='submit' color='pink' onClick={SubmitHandler} >Add</Button>
-   <Link to='/read'> <Button color='green'>check tasks</Button></Link>
+    <Button style={{"width":"15rem"}} type='submit' color='pink' onClick={SubmitHandler} >Add</Button>
+   <Link to='/read'> <Button style={{"width":"14.5rem"}} color='green'>check tasks</Button></Link>
   </Form>
     </div>
   )
