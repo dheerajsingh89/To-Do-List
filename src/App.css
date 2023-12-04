@@ -40,11 +40,11 @@ body {
 }
 
 .text-shadows {
-    text-shadow: 2px 2px 0 var(--color-secondary), 4px 4px 0 var(--color-tertiary), 5px 5px var(--color-quaternary), 7px 7px 0 var(--color-quinary);
+    text-shadow: 2px 2px 0 var(--color-secondary), 3px 3px 0 var(--color-tertiary), 3px 3px 0 var(--color-quaternary), 3px 3px 0 var(--color-quinary);
     font-family: bungee, sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: calc(1.5rem + 1.5vw);
+    font-size: calc(2.5rem + 2.5vw);
     text-align: center;
     margin: 0;
     color: var(--color-primary);

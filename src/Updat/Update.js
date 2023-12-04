@@ -25,13 +25,13 @@ export default function Create() {
        <Form>
     <Form.Field>
       <label style={{"alignItems":"center" , "color":"white","fontSize":"1.2rem"}}>Task Name</label>
-      <input  placeholder='Task Name' value={taskName} style={{"width":"30rem"}}  onChange={(e)=>settaskName(e.target.value)}/>
+      <input  placeholder='Task Name' value={taskName} style={{"width":"25rem"}}  onChange={(e)=>settaskName(e.target.value)}/>
     </Form.Field>
     <Form.Field>
       <label style={{"alignItems":"center" , "color":"white","fontSize":"1.2rem"}}>Due Time</label>
-      <input placeholder='Due Time' style={{"width":"30rem"}} value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
+      <input placeholder='Due Time' style={{"width":"25rem"}} value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
     </Form.Field>
-    <Button type='submit' onClick={UpdateHandler} style={{"color":"green","width":"30rem"}} >Update</Button>
+    <Button type='submit' onClick={UpdateHandler} style={{"color":"green","width":"25rem"}} >Update</Button>
   </Form>
     </div>
   )

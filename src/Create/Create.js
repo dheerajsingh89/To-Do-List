@@ -19,14 +19,14 @@ export default function Create() {
        <Form>
     <Form.Field>
       <label style={{"alignItems":"center","color":"white","fontSize":"1.2rem"}}>Task Name</label>
-      <input placeholder='Task Name' value={taskName}  onChange={(e)=>settaskName(e.target.value)} style={{"width":"30rem"}}/>
+      <input placeholder='Task Name' value={taskName}  onChange={(e)=>settaskName(e.target.value)} style={{"width":"25rem"}}/>
     </Form.Field>
     <Form.Field>
       <label style={{"alignItems":"center","color":"white","fontSize":"1.2rem"}}>Due Time</label>
-      <input style={{"width":"30rem"}} placeholder='Due Time' value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
+      <input style={{"width":"25rem"}} placeholder='Due Time' value={duetime} type='datetime-local' onChange={(e)=>setduetime(e.target.value)}/>
     </Form.Field>
-    <Button style={{"width":"15rem"}} type='submit' color='pink' onClick={SubmitHandler} >Add</Button>
-   <Link to='/read'> <Button style={{"width":"14.5rem"}} color='green'>check tasks</Button></Link>
+    <Button style={{"width":"12.5rem"}} type='submit' color='pink' onClick={SubmitHandler} >Add</Button>
+   <Link to='/read'> <Button style={{"width":"12rem"}} color='green'>check tasks</Button></Link>
   </Form>
     </div>
   )
